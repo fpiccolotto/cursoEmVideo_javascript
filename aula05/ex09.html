@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroporto</title>
+    <style>
+        body {
+            background-color: rgb(196, 241, 127);
+            color: rgb(24, 24, 56);
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual o seu país de origem?</h1>
+    País de origem: <input type="string" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="filtrar()">
+    <div id="res">
+
+<script>
+    function filtrar() {
+        var p = window.document.getElementById('pais')
+        var p2 = p.value
+        
+        if (p2 != 'Brasil' && p2 != 'Brazil') {
+            res.innerHTML = '<p>Você é <strong>Estrangeiro(a)</strong></p>'
+        } else {
+            res.innerHTML = '<p>Você é <strong>Brasileiro(a)</strong></p>'
+        }
+    }
+
+</script>
+    
+</body>
+</html>
