@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage test</title>
+    <style>
+        body {
+            background-color: rgb(49, 49, 250);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(250, 250, 42); /*Comentário CSS*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, world!</h1> <!--Comentário HTML-->
+    <p>Let's code guys!</p>
+    <script>
+        //alert("Welcome and enjoy this website") Comentário JS
+        //confirm("Stay home and be safe")
+        var name = prompt("Please, enter your name")
+        alert("Welcome, " + name)
+        var n1 = Number(prompt("Enter a number")) // String
+        var n2 = Number.parseFloat(prompt("Enter another number")) //String
+        var sum = n1 + n2
+        alert(`The sum of the numbers ${n1} and ${n2} = ` + sum)
+        // (number + number) sum 
+        // (string + string) concatenate
+    </script>
+</body>
+</html>
